@@ -1,8 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MatButtonModule, MatIconModule, MatMenuModule } from '@angular/material';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { CrystalGalleryModule } from 'ngx-crystal-gallery';
+
+import 'hammerjs';
 
 @NgModule({
   declarations: [
@@ -10,7 +17,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule,
+    NgZorroAntdModule,
+    NzGridModule,
+    CrystalGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
