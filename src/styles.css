@@ -162,8 +162,8 @@ nav ul li a:hover {
     grid-template-rows: auto;
     grid-template-areas:
      'con1 con2'
-     'con3 con4'
-     'con5 con6';
+     'con3 con5'
+     'con6 con6';
 }
 
 .grid1 {
@@ -187,21 +187,19 @@ nav ul li a:hover {
 }
 
 .grid4 {
-    padding-left: 5%;
-    padding-right: 20%;
+    
     grid-area: con4;
 }
 
 .grid5 {
     
-    padding-left: 20%;
-    padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 20%;
     grid-area: con5;
 }
 
 .grid6 {
-    padding-left: 5%;
-    padding-right: 20%;
+    padding: 0 20%;
     grid-area: con6;
 }
 
@@ -256,6 +254,18 @@ nav ul li a:hover {
  
 .fotka {
     max-height: 400px;
+}
+
+.prefb{
+    text-align: center;
+    padding: 100px 0 70px 0;
+}
+
+.fb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -327,7 +337,7 @@ nav ul li a:hover {
         display: block;
         width: 100%;
         height: 60px;
-        
+        z-index: 10;
         color: #ffffff;
         position: fixed;
         top: 0;
@@ -376,7 +386,7 @@ nav ul li a:hover {
         
         margin: 0 0;
         text-align: center;
-        
+        font-size: 1.1rem;
         padding: 185px 0px;
     }
 
@@ -434,6 +444,8 @@ nav ul li a:hover {
         padding: 0;
         text-align: center;
     }
+
+
 
     
 }
